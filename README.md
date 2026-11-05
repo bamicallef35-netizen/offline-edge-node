@@ -39,7 +39,7 @@ Local inference on your own hardware is lawful. The only compliance surface is e
 
 ## Why this sits with the rest
 
-A self-contained machine that builds its picture of the world from its own sensors, with no signal from outside, is the modern form of Grey Walter's tortoise and the local-first cousin of navigation without GPS. The engineering concerns are the ones that matter in autonomy: inference on a budget, quantization, latency and memory, accelerator integration, and a sensor-to-decision loop you can trust because you can test what it will not do.
+A self-contained machine that builds its picture of the world from its own sensors, with no signal from outside, is the modern form of Grey Walter's tortoise and the local-first cousin of navigation without GPS. One precedent from architecture, listed for the shared premise and not as a technical source: Hybrid Muscle (R&Sie(n) with Philippe Parreno, The Land, Chiang Mai, 2002) is an off-grid building whose electricity comes from counterweights raised by an elephant — a device that has to work unplugged. The engineering concerns are the ones that matter in autonomy: inference on a budget, quantization, latency and memory, accelerator integration, and a sensor-to-decision loop you can trust because you can test what it will not do.
 
 ## License
 
