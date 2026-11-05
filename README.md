@@ -1,6 +1,6 @@
 # offline-edge-node
 
-A fully offline, air-gapped perception + reasoning + knowledge node. Local chat, retrieval over your own documents with citations, and optional on-device vision and voice — on a laptop today, on a £200 Raspberry Pi or a £300 Jetson tomorrow — with *offline* enforced by a guard that makes any network attempt crash, rather than merely asserted.
+A fully offline, air-gapped perception + reasoning + knowledge node. Local chat, retrieval over your own documents with citations, and optional on-device vision and voice — on a laptop today, on a £200 Raspberry Pi or a £300 Jetson tomorrow — with *offline* enforced by a guard that makes any network attempt crash, where most projects only assert it.
 
 This is the honest, buildable version of a tempting idea: a small box that sees, listens, reads what you give it, and answers, with nothing leaving the device. What it is not is an autonomous agent that drives your computer; the section below says why.
 

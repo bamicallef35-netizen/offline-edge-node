@@ -1,8 +1,8 @@
 """edge_node — a fully offline perception + reasoning + knowledge node.
 
 Local chat, retrieval over your own documents, and (optionally) on-device
-vision and voice, with no network — enforced by ``netguard`` rather than
-merely asserted. See README.md for the honest capability envelope.
+vision and voice, with no network — enforced by ``netguard``, where most
+projects only assert it. See README.md for the honest capability envelope.
 """
 
 from .netguard import NetworkAttempt, netguard
