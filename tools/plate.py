@@ -49,8 +49,8 @@ def plate() -> str:
     layer_h, layer_gap = 44, 12
     top = pad + 42
     gap_h = 28 + len(LAYERS) * (layer_h + layer_gap) + 16
-    body = _text(pad, pad - 14, "offline-edge-node / an air-gapped perception, reasoning and knowledge node", 10, INK2)
-    body += _text(pad + w, pad - 14, "benmicallef / offline-edge-node / proposal with measured and sourced figures", 10, INK2, "end")
+    body = _text(pad, pad - 14, "offline-edge-node / six layers inside an air gap", 10, INK2)
+    body += _text(pad + w, pad - 14, "benmicallef / offline-edge-node", 10, INK2, "end")
     # the air gap: a dashed boundary nothing crosses at run time
     body += (
         f'<rect x="{box_x - 14}" y="{top - 8}" width="{box_w + 28}" height="{gap_h}" fill="none" '
