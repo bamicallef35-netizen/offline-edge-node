@@ -21,8 +21,9 @@ ap.add_argument("--conf", type=float, default=0.4)
 args = ap.parse_args()
 
 try:
-    from edge_node.vision import detect
     import onnxruntime  # noqa: F401
+
+    from edge_node.vision import detect
 except ImportError:
     print("onnxruntime/pillow not installed: pip install 'offline-edge-node[vision]'")
     sys.exit(0)
