@@ -35,7 +35,9 @@ Local inference on your own hardware is lawful. The only compliance surface is e
 
 ## Hardware
 
-[`hardware/BOM.md`](hardware/BOM.md) gives three tiers — a £0 laptop, a ~£230 Raspberry Pi 5 perception node, a ~£300 Jetson Orin Nano reasoning node — with each number marked measured or sourced, and [`hardware/architecture.md`](hardware/architecture.md) draws the six layers inside the air gap.
+[`hardware/BOM.md`](hardware/BOM.md) gives three tiers — a £0 laptop, a ~£230 Raspberry Pi 5 perception node, a ~£300 Jetson Orin Nano reasoning node — with each number marked measured or sourced, and [`hardware/architecture.md`](hardware/architecture.md) draws the six layers inside the air gap. `python tools/plate.py` draws the same as a plate, with the tiers and their figures, each marked measured or sourced:
+
+![offline-edge-node as a plate: six layers inside an air gap, the setup-only crossing, and three hardware tiers](docs/plate.svg)
 
 ## Why this sits with the rest
 
