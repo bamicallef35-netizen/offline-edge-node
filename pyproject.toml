@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offline-edge-node"
+version = "0.1.0"
+description = "A fully offline, air-gapped perception + reasoning + knowledge node: local chat, RAG over your own documents, optional on-device vision and voice — with network access blocked by a runtime guard."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Ben Micallef" }]
+dependencies = ["numpy>=1.26"]
+keywords = ["edge ai", "offline", "local llm", "llama.cpp", "rag", "air-gapped", "raspberry pi", "jetson"]
+
+[project.optional-dependencies]
+llm = ["llama-cpp-python>=0.3"]
+vision = ["onnxruntime>=1.17", "pillow>=10"]
+voice = ["sounddevice>=0.4"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.urls]
+Repository = "https://github.com/bamicallef35-netizen/offline-edge-node"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"tools/plate.py" = ["E501"]   # SVG strings and the plate's captions read better unwrapped
